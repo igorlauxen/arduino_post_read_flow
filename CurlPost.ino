@@ -16,7 +16,7 @@ String USER_AUTHENTICATION = "Bearer YOUR_DEVICE_TOKEN";
 
 String createCurlCommand (String url, String authentication, String messageType) {
     
-  String curlCmd = "curl ";
+  String curlCmd = "curl "; 
   //header parameters
   curlCmd += "--insecure -H  \"Authorization: "+ authentication +"\" ";
   curlCmd += "-H  \"Content-Type: application/json\" ";
